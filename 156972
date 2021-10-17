@@ -1,0 +1,125 @@
+#-*-coding:utf8;-*-
+#qpy:console
+
+import os
+import sys
+import time 
+from datetime import datetime
+
+def restart() :
+    os.system('clear ')
+    print("The script Programmed By Jimmy x shadow")
+
+#############################
+#Linux_banner
+##############################    
+def banner ():
+     print("\033[0;32m            .88888888:.")
+     time.sleep(0.1)
+     print("\033[0;32m           88888888.88888.")
+     time.sleep(0.1)
+     print("\033[0;32m         .8888888888888888.")
+     time.sleep(0.1)
+     print("\033[0;32m         888888888888888888")
+     time.sleep(0.1)
+     print("\033[0;32m         88' _`88'_  `88888")
+     time.sleep(0.1)
+     print("\033[0;32m         88 88 88 88  88888")
+     time.sleep(0.1)
+     print("\033[0;32m         88_88_::_88_:88888")
+     time.sleep(0.1)
+     print("\033[0;32m         88:::,::,:::::8888")
+     time.sleep(0.1)
+     print("\033[0;32m         88`:::::::::'`8888")
+     time.sleep(0.1)
+     print(" \033[0;32m      .88  `::::'    8:88.")
+     time.sleep(0.1)
+     print(" \033[0;32m      8888            `8:888.")
+     time.sleep(0.1)
+     print("\033[0;32m     .8888'             `888888.")
+     time.sleep(0.1)
+     print("\033[0;32m    .8888:..  .::.  ...:'8888888:.")
+     time.sleep(0.1)
+     print("\033[0;32m   .8888.'     :'     `'::`88:88888")
+     time.sleep(0.1)
+     print("\033[0;32m  .8888        '         `.888:8888.")
+     time.sleep(0.1)
+     print("\033[0;32m  888:8         .           888:88888 ")
+     time.sleep(0.1)
+     print("\033[0;32m .888:88        .:           888:88888:")
+     time.sleep(0.1)
+     print("\033[0;32m  8888888.       ::           88:888888")
+     time.sleep(0.1)
+     print("\033[0;32m `.::.888.      ::          .88888888")
+     time.sleep(0.1)
+     print("\033[0;32m.::::::.888.    ::         :::`8888'.:.")
+     time.sleep(0.1)
+     print("\033[0;32m::::::::::.888   '         .::::::::::::")
+     time.sleep(0.1)
+     print("\033[0;32m ::::::::::::.8    '      .:8::::::::::::.")
+     time.sleep(0.1)
+     print("\033[0;32m .::::::::::::::.        .:888:::::::::::::")
+     time.sleep(0.1)
+     print("\033[0;32m :::::::::::::::88:.__..:88888:::::::::::'")
+     time.sleep(0.1)
+     print("\033[0;32m  `'.:::::::::::88888888888.88:::::::::' ")
+     time.sleep(0.1)
+     print(" \033[0;32m       `':::_:' -- '' -'-' `':_::::'`")
+banner()
+############################
+#LINUX_INSTALL
+#############################
+def install_linux():
+    print("  \033[0;33m         To install any Linux distribution")
+    print("  \033[0;33m     you must choose a number for it and it will be")
+    print("    \033[0;33m    installed togethe with  a Xfce desktop Enivronmet")
+    print("")
+    print("+------------------------------------------------------+")
+    print("¦                       + INSTALL +                    ¦")
+    print("+------------------------------------------------------+ ")
+    print(" ")
+    print("\033[0;31m [1]\033[0;32mKali linux \033[0;32m                \033[0;31m [4]\033[0;32m Fedora\033[0;32m          ")
+    print("\033[0;31m [2]\033[0;32mDebian \033[0;32m                   \033[0;31m  [5]\033[0;32m Arch linux\033[0;32m ")
+    print("\033[0;31m [3]\033[0;32mUbuntu \033[0;32m                                         ")
+    print("")
+    print("")
+    print("\033[0;31m--chose the number to install - -")
+    install=input("\033[0;31m[*] \033[0;33mEnter the number here >>")
+    if install =='1' :
+        print("\033[0;32mPlease wait seconds.. ")
+        os.system('pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali-xfce.sh -O kali-xfce.sh && chmod +x kali-xfce.sh && bash kali-xfce.sh' )
+        os.system('clear ')
+        print("\033[0;31m[ ! ] \033[0;32mKali Linux has been installed... ")
+        time.sleep(0.1)
+        print("\033[0;31m You can run kali linux with xfce Desktop Enivronmet...") 
+        restart ()
+    elif install =='2':
+        print("\033[0;32mPlease wait seconds.. ")
+        os.system('pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Debian/debian-xfce.sh -O debian-xfce.sh && chmod +x debian-xfce.sh &&  bash debian-xfce.sh')
+        os.system('clear ')
+        print("\033[0;31m[[ ! ] \033[0;32m Debian has been installed... ")
+        print(" You can run Debian with xfce Desktop Enivronmet ...")
+        restart()
+    elif install =='3':
+        print("\033[0;32mPlease wait seconds.. ")
+        os.system('pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu20/ubuntu20-xfce.sh -O ubuntu20-xfce.sh && chmod +x ubuntu20-xfce.sh && bash ubuntu20-xfce.sh')
+        os.system('clear')
+        print("\033[0;31m[ ! ]\033[0;32m  Ubuntu has been installed... ")
+        print(" You can run Ubuntu with xfce Desktop Enivronmet...")
+        restart()
+    elif install =='4':
+        print("\033[0;32mPlease wait seconds.. ")
+        os.system('pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Fedora/fedora-xfce.sh -O fedora-xfce.sh && chmod +x fedora-xfce.sh && bash fedora-xfce.sh')
+        os.system('clear')
+        print("\033[0;31m[ ! ] \033[0;32m Fedora has been installed... ")
+        print("\033[0;32m You can run Fedora with xfce Desktop Enivronmet ...")
+        restart()
+    elif install =='5':
+        print("\033[0;32mPlease wait seconds.. ")
+        os.system('pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Arch/armhf/arch-xfce.sh -O arch-xfce.sh && chmod +x arch-xfce.sh && bash arch-xfce.sh')
+        os.system('clear')
+        print("\033[0;31m[ ! ]\033[0;32m  Arch linux has been installed... ")
+        print(" You can run Arch linux with xfce Desktop Enivronmet ...")
+        restart()
+install_linux()
+
